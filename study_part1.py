@@ -1,11 +1,14 @@
+# importing from python library
 import sqlite3
 import os
 
+# creating a filepath to get to the database
 filepath = os.path.join('study_part1.sqlite3')
 
-
+# connection to the sqlite3 and and feeding the database
 connection = sqlite3.connect(filepath)
 
+#
 cursor = connection.cursor()
 
 query = '''
